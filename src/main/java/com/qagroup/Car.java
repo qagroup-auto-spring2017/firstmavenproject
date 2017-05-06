@@ -25,5 +25,12 @@ public class Car {
 		this.color = newColor;
 	}
 	
+	public String getMake() {
+		return this.make;
+	}
+	
+	public String getModel() {
+		return this.model;
+	}
 	
 }
