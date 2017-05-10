@@ -1,6 +1,8 @@
 package com.qagroup;
 
 public class Car {
+	
+	public static int counter = 0;
 
 	// Fields
 	private String color;
@@ -11,9 +13,10 @@ public class Car {
 	
 	// Constructor
 	public Car(String color, String make, String model) {
-		this.color = "Black";
+		this.color = color;
 		this.make = make;
 		this.model = model;
+		counter++;
 	}
 	
 	// Methods
@@ -31,6 +34,10 @@ public class Car {
 	
 	public String getModel() {
 		return this.model;
+	}
+	
+	public static int getCounter() {
+		return counter;
 	}
 	
 }
