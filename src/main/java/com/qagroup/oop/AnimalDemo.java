@@ -4,8 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AnimalDemo {
-
+	
 	public static void main(String[] args) {
+		Animal animal = new Animal("Cat");
+		animal.packagePrivate();
+		animal.protectedMethod();
+		animal.getName();
+		//animal.privateMethod();
+	}
+
+	public static void main5(String[] args) {
 		// Approach 1
 		// Animal dog = new Animal("Dog");
 		//

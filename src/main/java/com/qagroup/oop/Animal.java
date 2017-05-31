@@ -24,4 +24,16 @@ public class Animal implements CanMove {
 	public String toString() {
 		return this.name;
 	}
+	
+	void packagePrivate() {
+		System.out.println("Package privete");
+	}
+	
+	protected void protectedMethod() {
+		System.out.println("Protected method");
+	}
+	
+	private void privateMethod() {
+		
+	}
 }
